@@ -39,16 +39,23 @@ El objetivo de este taller es hacer que la página que ya desarrollamos se vea c
 
 ## Fotos Bootstrap
 1. Desktop
+
     <img src="/assets/images/image.png">
+
 2. Mobile first 
+
     <img src="/assets/images/image1.png">
+
 
 ## Fotos Tailwind
 1. Desktop
+
     <img src="/assets/images/image2.png">
+
 2. Mobile first
+
     <img src="/assets/images/image3.png">
-    
+
 ## Recursos adicionales
 
 - [Documentación de Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
