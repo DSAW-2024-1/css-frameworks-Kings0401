@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #f5f5f5;
 }
 
@@ -25,6 +25,10 @@ body {
     align-items: center;
     background-color: #f3ebeb;
     border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .cuadro-izquierdo {
@@ -35,6 +39,10 @@ body {
     text-align: center;
     background-color: hsl(241, 81%, 54%);
     border-radius: 30px;
+    padding: 20px;
+    margin: 20px;
+    width: 100%;
+    max-width: 300px;
 }
 
 .cuadro-izquierdo h3 {
@@ -48,11 +56,9 @@ body {
 .circulo {
     border-radius: 100%;
     background-color: #2f39ef;
-    max-width: 200px;
-    max-height: 200px;
-    min-width: 200px;
-    min-height: 200px;
-    margin: 0.25rem 4rem 0 4rem;
+    width: 200px;
+    height: 200px;
+    margin: 0.25rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -96,8 +102,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: left;
-    padding: 0 6rem 0 6rem;
+    padding: 0 20px 0 20px;
     border-radius: 0 30px 30px 0;
+    width: 100%;
+    max-width: 400px;
 }
 
 .cuadro-derecho h3 {
@@ -118,7 +126,6 @@ body {
 
 .red {
     background-color: hsl(0, 100%, 67%, 0.1);
-    
 }
 
 .red p {
@@ -160,7 +167,7 @@ body {
     width: 20px;
 }
 
-.col{
+.col {
     width: 100%;
 }
 
@@ -186,51 +193,45 @@ body {
     background-color: hsl(224, 30%, 20%);
 }
 
-@media (max-width: 650px) {
-    .report-container {
-        flex-direction: column;
-        width: 100vw;
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px; 
+    }
+
+    .container {
+        padding: 10px; 
+    }
+
+    .segundo-container {
+        padding: 20px;
+        margin: 10px; 
+        flex-direction: column; 
     }
 
     .cuadro-izquierdo {
-        border-radius: 0 0 30px 30px;
-        width: 100%;
-    }
-
-    .cuadro-izquierdo h3 {
-        margin-top: 10rem;
-    }
-
-    .puntaje {
-        max-width: 80%;
-    }
-
-    .circulo {
-        margin: 0.25rem 0 0 0;
-        width: 100px;
-        height: 100px;
-        min-width: 150px;
-        min-height: 150px;
-        max-width: 150px;
-        max-height: 150px;
+        padding: 20px;
+        margin: 10px;
+        max-width: none; 
     }
 
     .cuadro-derecho {
-        padding: 0;
-        margin: 0;
-        width: 100%;
+        padding: 0 20px; 
+        max-width: none;
     }
 
-    .cuadro-derecho h3 {
-        margin-left: 1.5rem;
+    .cuadro-izquierdo h3,
+    .cuadro-izquierdo h2,
+    .cuadro-izquierdo p {
+        font-size: 1.2rem; 
     }
 
-    .stats-container {
-        width: 100%;
+    .circulo {
+        width: 150px; 
+        height: 150px;
     }
 
-    .stat {
-        width: 90%;
+    .emoji img {
+        height: 15px; 
+        width: 15px;
     }
 }
-
